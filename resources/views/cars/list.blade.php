@@ -39,13 +39,24 @@
                                 <td>
                                     {{ $car->service ? $car->service->name : "" }}
                                 </td>
-                                <td>
+                                <td class="d-flex flex-col">
                                     <a
                                         class="btn btn-warning"
                                         href="{{ route('cars.updateForm', ['car' => $car->id]) }}"
                                     >
                                         Módosítás
                                     </a>
+                                    <form 
+                                        method="POST" 
+                                        action="{{ route('cars.delete', ['car' => $car->id]) }}"
+                                    >
+                                        @csrf()
+                                        @method("DELETE")
+                                        <button 
+                                            type="submit" 
+                                            class="btn btn-danger"
+                                        >Törlés</button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach
