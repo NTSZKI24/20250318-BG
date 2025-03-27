@@ -17,7 +17,7 @@
                     <input name="capacity" class="form-control" value="{{ $service->capacity }}">
                 </div>
                 <button type="submit" class="btn btn-success">
-                    Mentés
+                    Módosítás
                 </button>
             </form>
         </div>

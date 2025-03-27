@@ -33,7 +33,7 @@
                     >
                 </div>
                 <button type="submit" class="btn btn-success mt-3">
-                    Létrehozás
+                    Módosítás
                 </button>
             </form>
         </div>
